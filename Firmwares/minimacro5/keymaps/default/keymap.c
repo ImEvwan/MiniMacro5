@@ -1,31 +1,13 @@
 #include QMK_KEYBOARD_H
 
-#define _MAIN 0
+#define _BASE 0
+#define _SECOND 1 
 
-void encoder_update_user(uint8_t index, bool clockwise) {
-  if (index == 0) { /* First encoder */
-    if (clockwise) {
-      tap_code(KC_1);
-    } else {
-      tap_code(KC_2);
-    }
-  } else if (index == 1) { /* Second encoder */  
-    if (clockwise) {
-      tap_code(KC_3);
-    } else {
-      tap_code(KC_4);
-    }
-  } else if (index == 2) { /* Third encoder */  
-    if (clockwise) {
-      tap_code(KC_5);
-    } else {
-      tap_code(KC_6);
-    }
-  }
-}
-
-const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = { //buttion closest to usb is first
-  [_MAIN] = LAYOUT(
-     KC_AUDIO_VOL_UP, KC_AUDIO_VOL_DOWN, KC_MEDIA_NEXT_TRACK, KC_MEDIA_PLAY_PAUSE, KC_MEDIA_PREV_TRACK
-  )
+const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+  [_BASE] = LAYOUT_ortho_1x5(
+    KC_A, KC_B, KC_C, KC_D, LT(_SECOND, KC_E)
+  ),
+  [_SECOND] = LAYOUT_ortho_1x5(
+    KC_F, KC_G, KC_H, KC_I, KC_J
+  ),
 };
