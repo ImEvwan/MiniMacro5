@@ -1,4 +1,4 @@
-# minimacro5
+# Evwan's MiniMacro5 Firmwares
 These are the MiniMacro5 Firmwares that I'm developing.
 
 Original firmware could be found here: 
