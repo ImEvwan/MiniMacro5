@@ -45,16 +45,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define MATRIX_ROW_PINS { D0, D5 }
 // #define MATRIX_COL_PINS { F1, F0, B0 }
 #define DIRECT_PINS {   \
-    { F4, B3, B1, B6, B2 } \
+    { F4, B6, B2, D7, B4 } \
 }
 #define UNUSED_PINS
 
-/* rotary encoder 1,2,3 closest to usb port is 1*/
-#define ENCODERS_PAD_A { D2, D0, E6}
-#define ENCODERS_PAD_B { D3, D1, B5}
+/* rotary encoder 1,2,3 closest to usb port is 0*/
+#define ENCODERS_PAD_A { D3, F6, F7, D4, C6}
+#define ENCODERS_PAD_B { F5, D2, D1, D0, E6}
 #define ENCODER_RESOLUTION 4 //default/suggested
 
 /* ws2812 RGB LED */
-#define RGB_DI_PIN D4
+#define RGB_DI_PIN B5
 #define RGBLIGHT_ANIMATIONS
 #define RGBLED_NUM 6    // Number of LEDs
