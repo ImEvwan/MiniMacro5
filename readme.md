@@ -1,9 +1,9 @@
 # Evwan's MiniMacro5 v2 Custom Firmwares
 These are the MiniMacro5 Firmwares that I'm developing.
 
-v3 is the black consumer board with RGB, ICSP, Black PCB, 5 encoders/switches
+<b>v3</b> is the black consumer board with RGB, ICSP, <b>Black PCB</b>, 5 encoders/switches
 
-v2 is the white developer board with 5 switches/3 encoders + 2 switches, white PCB
+<b>v2</b> is the white developer board with a <b>white PCB</b>, 5 switches/3 encoders + 2 switches
 
 Original firmware could be found here: 
 https://github.com/LeafCutterLabs/miniMACRO5
