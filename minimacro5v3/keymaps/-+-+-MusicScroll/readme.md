@@ -1,4 +1,5 @@
-# Layout is Switch, Encoder, Switch, Encoder, Switch, [USB PORT].
+# Layout is as follows
+Switch, Encoder, Switch, Encoder, Switch, [USB PORT].
 
 Functions are as follow
 
